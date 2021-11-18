@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var fees = {Raj:10, Rohan:30}
+        document.write(fees['Raj'] + "<br>");
+        document.write(fees["Raj"] + "<br>");
+        document.write(fees.Raj);
+
+        var fees = {'super men':30}
+        document.write(fees['super men'] + "<br>");
+        document.write(fees["super men"] +  "<br>");
+        document.write("<br>");
+
+        var fees  ={
+            Raj : 30,
+            Rohan : 60,
+            Mohan : 50,
+            total : function() {
+                return 30+60+50;
+            }
+        };
+        document.write(fees.total());
+        document.write(fees     ['total']());
+        document.write("<br> <br>");
+
+
+        // adding  object methods
+
+        var fees = {raj:50, mohan:50}
+        document.write(fees.raj + " " + fees.mohan);
+        fees.brot = 20;
+        document.write(fees.raj + " " + fees.mohan + " " + fees.brot);
+
+        fees.show=function(){};
+        
+        console.log(fees);
+       
+    
+    </script>
+</body>
+</html>

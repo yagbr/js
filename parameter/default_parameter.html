@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pra(a , b , c=90) {
+            document.write("A :" +a+ "<br>" + "B: " + b + "<br>" + "C :" + c);
+        }
+
+        pra(10,20);
+        document.write("<br> <br>");
+
+        function pra(a , b=20 , c) {
+            document.write("A :" +a+ "<br>" + "B: " + b + "<br>" + "C :" + c);
+        }
+
+        pra(10);
+        document.write("<br> <br>");
+
+        function pra(a , b=20 , c=80) {
+            document.write("A :" +a+ "<br>" + "B: " + b + "<br>" + "C :" + c);
+        }
+
+        pra(10);
+      
+        
+        document.write("<br> <br>");
+        function pr(a , b=20 , c=null) {
+            document.write("A :" +a+ "<br>" + "B: " + b + "<br>" + "C :" + c);
+        }
+
+        pr(10);
+        document.write("<br> <br>");
+
+        function arr(a=[10] , b ,c) {
+            document.write("A : " + a[0] + "<br>" + "B: " + b + "<br>" + "C :" + c);
+        }
+
+    
+
+        arr([2] , 30 ,50);
+    </script>
+</body>
+</html>

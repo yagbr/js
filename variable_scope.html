@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // global variable
+        var  i= "global variable";
+
+        function global(){
+            document.write(i);
+        }
+        global();
+        document.write("<br>");
+
+        if(true) {
+            document.write(i);
+
+        }
+
+        document.write("<br>");
+
+        function inner() {
+             j = "hello inner";
+          
+        }
+        inner();
+        document.write (j);
+
+        // local variable
+        function local(){
+            var b="local variable";
+            document.write (b);
+        }
+
+        local();
+        document.write("<br>");
+
+        function add () {
+            var k ="inner var";
+        
+            document.write(k);
+            document.write("<br>");
+            function show (){
+                var n="onther var";
+                document.write(n);
+                document.write("<br>");
+                document.write(k);
+
+            }show()
+        }add()
+       
+
+    </script>
+</body>
+</html>

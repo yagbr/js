@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        var fees = {};
+        fees['Rahul'] =300;
+        fees['Rohan'] =600;
+        fees['Raju'] =800;
+        document.write(fees['Rahul'] + "<br>");
+
+        var fees = {};
+        fees.Rahul=300;
+        fees.Raju=900;
+        fees.Rohan=700;
+        document.write(fees['Raju']) + "<br>";
+        document.write("<br>");
+
+        var fees = {};
+        fees['Rahul'] =300;
+        fees['Rohan'] =600;
+        fees['Raju'] =800;
+        fees['super men'] =700;
+        document.write(fees['super men'] + "<br>");
+
+        var fees = {};
+        fees.Rahul=300;
+        fees.Raju=900;
+        fees.Rohan=700;
+        fees.super_women = 980;
+        document.write(fees['super_women']) + "<br>";
+        document.write("<br>");
+
+        var fees ={};
+        fees['Rahul'] =300;
+        fees['Rohan'] =600;
+        fees['Raju'] =800;
+        fees['super men'] =700;
+        fees['total'] = function(){ return 300+600+800+700};
+        document.write(fees['total'] ());
+        document.write("<br>");
+
+        var fee={Raju :300, Rohan:900, Rahul:60};
+        document.write(fee['Raju']);
+        document.write("<br>");
+        
+
+        var fee = {
+            Raju :300, 
+            Rohan:900, 
+            Rahul:60,
+           'super men': 90,
+
+        };
+       document.write(fee['super men']);
+       document.write("<br>");  
+
+        var fee= {raju: 30, total:function(){
+            return 30+300;
+        }};
+
+       document.write(fee.total());
+       document.write("<br>");
+
+    //object 
+      
+    var obj= new Object();
+     obj['raj'] = 300;
+       
+     document.write(obj['raj']);
+     document.write("<br>");
+
+    //  deleting
+  
+    var fees={neel:30, Rohan:50}
+  
+    document.write(fees.neel+ " "+ fees.Rohan+ "<br>");
+    delete fees.neel;
+    document.write(fees.neel+ " "+ fees.Rohan+ "<br> ");
+    console.log(fees);
+  
+
+     </script>
+</body>
+</html>

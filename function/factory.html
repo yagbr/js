@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function mobile(){
+        //     return {
+        //         model: 'Galaxy',
+        //         price: function() {return "price Rs.3000";}
+        //     };
+        // }
+
+        // var samsung = mobile();
+        // document.write(samsung.model + " " + samsung.price());
+        // document.write("<br>");
+
+        function mobile(model_no, color ,ram , storage,){
+            return {
+                model: model_no,
+                price:function() {
+                      return "mrp 12800";
+                }
+
+            
+             }
+            };
+        
+        
+
+            var samsung = mobile("Galaxy M32");
+            //  var samsung = mobile("Light_Blue");
+            //  var samsung = mobile ("6gb rem");
+            //  var samsumg = moblle ("128GB Storage");
+           
+             document.write (samsung.model + " "+samsung.price());
+       </script>
+</body>
+</html>

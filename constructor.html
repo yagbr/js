@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function phone(company_name, phone_price, phone_color,  phone_ram , phone_storage) {
+            this.company = company_name;
+            this.price = phone_price;
+            this.color = phone_color;
+            this.ram = phone_ram;
+            this.storage = phone_storage;
+            this.mobile = function() {
+                document.write(this.company + this.price + this.color + this.ram +this.storage);
+               
+            }
+        }
+
+       
+
+        OnePlus = new phone('OnePlus 9 Pro 5G' + "(" + ' ₹65,999,'+ ' Stellar Black,'  + ' 12GB RAM,'+' 256GB Storage'+")" +"<br>");
+        Samsung = new phone('Samsung Galaxy S20 FE 5G' + "(" + ' ₹36,990,'+ " " + ' Cloud Green,' + " " + ' 8GB RAM,' + " " + ' 128GB Storage'+")");
+        OnePlus.mobile();
+        Samsung.mobile();
+
+        console.log(OnePlus);
+
+    </script>
+</body>
+</html>

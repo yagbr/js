@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    //   type of operator
+    function phone(company_name) {
+            this.company = company_name;
+            this.price = 4;
+           
+                // document.write(this.company + this.price + this.color + this.ram +this.storage);
+                
+            }
+        
+
+        var nokia = new phone ('3310');
+
+      
+
+    //  if (typeof OnePlus.m !== 'undefined') {
+    //      document.write("Available");
+    //  }
+    //  else {
+    //      document.write("Doesnt Exist");
+    //  }
+
+    //  if ('price' in nokia){
+    //     document.write("Available");
+    //  }
+
+    //  else {
+    //     document.write("Doesnt Exist");
+    //  }
+
+
+    //  has OwnProperty()
+    if (nokia.hasOwnProperty("price")) {
+        document.write("Available");
+    }
+
+    else{
+        document.write("Doesnt Exist");
+    }
+     
+  </script>
+</body>
+</html>

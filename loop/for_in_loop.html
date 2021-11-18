@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function Mobile(model_no) {
+             this.model = model_no
+             this.color = "red"
+             this.rem = "3gb"
+             this.price = function() {
+                 document.write(this.model + "price 3000rs <br>")
+             };
+         }
+
+         var samsung = new Mobile('Galaxy');
+         var nokia  = new Mobile('3100');
+          
+
+         for (var spacs in nokia) {
+            document.write(nokia [spacs] + '<br>')
+         }
+
+         for (var spacs1 in nokia) {
+             if (typeof nokia[spacs1] !== 'function') {
+                document.write(nokia [spacs1] + '<br>');
+             }
+         }
+
+         for(var spacs3 in nokia) {
+             if (typeof nokia[spacs3] !== 'function') {
+                 document.write(spacs3 + " " + nokia [spacs3] + "<br>");
+                 console.log(spacs3 + " " + nokia [spacs3] + "<br>")
+             }
+         }
+             
+         
+    </script>
+</body>
+</html>
